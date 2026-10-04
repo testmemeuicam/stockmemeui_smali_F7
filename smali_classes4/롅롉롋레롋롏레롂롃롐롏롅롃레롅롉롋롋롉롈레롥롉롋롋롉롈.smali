@@ -1747,7 +1747,7 @@
 .method public T3()Z
     .locals 0
 
-    instance-of p0, p0, Lᔼᔰᔲᕱᔲᔶᕱᔻᔺᔩᔶᔼᔺᕱᔚᔲᔺᔭᔾᔳᔻᔀᔯᔭᔰᔀᔭ;
+    const/4 p0, 0x1
 
     return p0
 .end method
@@ -1967,7 +1967,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    instance-of p0, p0, Lᔼᔰᔲᕱᔲᔶᕱᔻᔺᔩᔶᔼᔺᕱᔚᔲᔺᔭᔾᔳᔻᔀᔯᔭᔰᔀᔭ;
+    const/4 p0, 0x0
 
     return p0
 .end method
@@ -2491,7 +2491,7 @@
 .method public c3()Z
     .locals 0
 
-    instance-of p0, p0, Lᔼᔰᔲᕱᔲᔶᕱᔻᔺᔩᔶᔼᔺᕱᔚᔲᔺᔭᔾᔳᔻᔀᔯᔭᔰᔀᔭ;
+    const/4 p0, 0x0
 
     return p0
 .end method
