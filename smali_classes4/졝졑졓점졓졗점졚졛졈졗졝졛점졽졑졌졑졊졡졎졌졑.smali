@@ -55,9 +55,7 @@
 .method public P3()Z
     .locals 0
 
-    instance-of p0, p0, L束杓村朒村杕朒杘杙杊杕束杙朒板杓李杓杈杣杌李杓杣村;
-
-    xor-int/lit8 p0, p0, 0x1
+    const/4 p0, 0x1
 
     return p0
 .end method

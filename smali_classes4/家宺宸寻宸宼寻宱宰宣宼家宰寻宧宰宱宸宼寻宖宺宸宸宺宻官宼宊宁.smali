@@ -321,7 +321,7 @@
 .method public P3()Z
     .locals 0
 
-    instance-of p0, p0, L摂摎摌搏摌摈搏摅摄摗摈摂摄搏摦摎摘摀;
+    const/4 p0, 0x1
 
     return p0
 .end method

@@ -4336,34 +4336,10 @@
 .end method
 
 .method public final s1()Z
-    .locals 1
-
-    iget-object p0, p0, LG7/b;->e:L롅롉롋레롋롏레롂롃롐롏롅롃레롅롉롋롋롉롈레롥롉롋롋롉롈;
-
-    invoke-virtual {p0}, L롅롉롋레롋롏레롂롃롐롏롅롃레롅롉롋롋롉롈레롥롉롋롋롉롈;->u2()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    sget-object p0, Lt6/b;->r:Ljava/lang/String;
-
-    const-string v0, "NoMadrid"
-
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_0
+    .locals 0
 
     const/4 p0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
     return p0
 .end method
 

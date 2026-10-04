@@ -1318,7 +1318,7 @@
 .method public O3()Z
     .locals 0
 
-    instance-of p0, p0, L帣帯席幮席帩幮帤帥帶帩帣帥幮布帨帥帮带帥帮帧;
+    const/4 p0, 0x1
 
     return p0
 .end method
@@ -1400,7 +1400,7 @@
 .method public P3()Z
     .locals 0
 
-    instance-of p0, p0, L帣帯席幮席帩幮帤帥帶帩帣帥幮布帨帥帮带帥帮帧;
+    const/4 p0, 0x1
 
     return p0
 .end method
