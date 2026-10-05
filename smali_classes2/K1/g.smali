@@ -5,15 +5,11 @@
 
 # virtual methods
 .method public final D(Ls3/j;)Z
-    .locals 0
+    .locals 1
 
-    const/16 p0, 0xb4
+    const/4 v0, 0x1
 
-    invoke-static {p0}, Lcom/android/camera/data/data/l;->B(I)Z
-
-    move-result p0
-
-    return p0
+    return v0
 .end method
 
 .method public final getModuleId()I

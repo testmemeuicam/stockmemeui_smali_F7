@@ -1756,7 +1756,7 @@
     goto :goto_f
 
     :cond_1d
-    const/4 v6, 0x1
+    const/4 v6, 0x0
 
     invoke-static {}, LZ/a;->g()Le0/o;
 

@@ -611,24 +611,6 @@
     :cond_2
     invoke-static {}, Lcom/android/camera/data/data/A;->j0()V
 
-    const/16 v0, 0xa7
-
-    if-ne p1, v0, :cond_3
-
-    invoke-static {}, LZ/a;->a()Lb0/a1;
-
-    move-result-object v0
-
-    const-string v4, "pref_camera_from_pro_video_module"
-
-    invoke-virtual {v0, v4, v2}, Lea/a;->g(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const/16 p1, 0xb4
-
     :cond_3
     const/16 v0, 0xb8
 

@@ -70,16 +70,44 @@
     return p0
 .end method
 
+.method public getModeItem()Lo2/a;
+    .locals 4
+
+    const v0, 0x7f08055b
+
+    const/4 v1, -0x1
+
+    const v2, 0x7f08055b
+
+    const v3, 0x7f08055b
+
+    filled-new-array {v2, v3, v0, v1}, [I
+
+    move-result-object v0
+
+    const v1, 0x7f140590
+
+    invoke-virtual {p0, v0, v1}, Lcom/android/camera/module/entry/BaseModuleEntry;->createComponentDataItem([II)Lcom/android/camera/data/data/d;
+
+    move-result-object p0
+
+    new-instance v0, Lo2/a$a;
+
+    invoke-direct {v0}, Lo2/a$a;-><init>()V
+
+    iput-object p0, v0, Lo2/a$a;->a:Lcom/android/camera/data/data/d;
+
+    invoke-virtual {v0}, Lo2/a$a;->a()Lo2/a;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public support()Z
     .locals 0
 
-    sget-boolean p0, LG7/b;->i:Z
-
-    sget-object p0, LG7/b$b;->a:LG7/b;
-
-    invoke-virtual {p0}, LG7/b;->B1()Z
-
-    move-result p0
+    const/4 p0, 0x1
 
     return p0
 .end method

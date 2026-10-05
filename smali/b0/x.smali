@@ -1651,7 +1651,7 @@
 .end method
 
 .method public final E(I)Ljava/util/List;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1660,6 +1660,8 @@
             ">;"
         }
     .end annotation
+
+    move-object v6, p0
 
     invoke-virtual {p0, p1}, Lb0/x;->D(I)Ljava/util/List;
 
@@ -1671,9 +1673,71 @@
 
     if-eqz v0, :cond_0
 
+    invoke-static {}, LZ/a;->g()Le0/o;
+
+    move-result-object v0
+
+    iget v0, v0, Le0/o;->s:I
+
+    const/16 v1, 0xb4
+
+    if-eq v0, v1, :cond_empty_pro_video
+
     sget-object p0, Llf/w;->a:Llf/w;
 
     return-object p0
+
+    :cond_empty_pro_video
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const/16 v1, 0xc1
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xa0
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xd8
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xd8
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xad
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xae
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0x104
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xd6
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const/16 v1, 0xd2
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-object v0
 
     :cond_0
     invoke-interface {p1}, Ljava/util/List;->size()I

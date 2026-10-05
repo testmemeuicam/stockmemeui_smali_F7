@@ -1918,23 +1918,7 @@
     goto :goto_5
 
     :cond_8
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    const-string v0, "Unsupported Slow Motion Recording: "
-
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p0
+    goto :goto_5
 
     :cond_9
     invoke-virtual {p0, p1}, Lc1/a;->s(Ls3/j;)V
